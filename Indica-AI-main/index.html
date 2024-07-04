@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me Ajuda AI</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="popup-container minimized" id="chatContainer">
+        <div class="popup-header">
+            <div>
+                <h1>Indica AI</h1>
+                <div class="legend">
+                    <p>@Anota</p>
+                    <p>@Ifood</p>
+                    <p>@105</p>
+                </div>
+            </div>
+            
+            <button id="button-minimize" onclick="toggleMinimize()"></button>
+        </div>
+        <div class="popup-body">
+            <div class="chat-box" id="chatBox">
+                <!-- Mensagens do chat serão inseridas aqui -->
+            </div>
+            <div id="messagePreview"></div>
+            <div class="chat-input">
+                <div class="chat-input-main">
+                    <input type="text" id="userInput" placeholder="Digite sua mensagem...">
+                    <button onclick="buttonClick()" id="button-send">
+                        <img src="https://raw.githubusercontent.com/Delutto/Indica-AI/main/img/send.png">
+                    </button>
+                </div>
+                <div class="chat-input-buttons">
+                    <button class="chat-input-buttons-button" id="recordButton" onclick="toggleRecording()"><img
+                            src="./img/mic2.png">
+                    </button>
+
+                    <button class="chat-input-buttons-button" id="ouvirTextos">
+                        <img src="./img/hearing2.png">
+                    </button>
+
+                    <button class="chat-input-buttons-button" id="alterarContraste"><img
+                            src="./img/contrast2.png">
+                    </button>
+
+                    <button class="chat-input-buttons-button" id="alterarTamanho">
+                        <img src="./img/zoom.png">
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="minimize-button" onclick="toggleMinimize()">
+            <img class="img-chat" src="./img/chat.png" alt="" srcset="">
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+	<script src="js/recommend.js"></script>
+</body>
+
+</html>
